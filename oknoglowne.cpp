@@ -1,8 +1,8 @@
 #include "oknoglowne.h"
 #include "oknododajp.h"
 #include "playlisty.h"
+#include <graj.h>
 #include <QLabel>
-
 
 
 Oknoglowne::Oknoglowne()
@@ -43,8 +43,9 @@ connect(this->wyszukiwarka,SIGNAL(textChanged(QString)),this,SLOT(przeszukajbaze
 Oknoglowne::stworzwyszukiwarkes()
 {
    wyszukiwarka=new QLineEdit(this);
-   wyszukiwarka->move(250,50);
+   wyszukiwarka->setMaximumSize(200,20);
    wyszukiwarka->setStyleSheet("QLineEdit{background-color:grey;}");
+   wyszukiwarka->move(100,30);
    model=new QStringListModel();
 
    wyszukanepiosenki=new QListView(this);
@@ -205,7 +206,16 @@ Oknoglowne::tabelakilks(QModelIndex in)
         }
 
     }
-    grajpiosenkes(sciezkadopiosenkipoklik);
+    //grajpiosenkes(sciezkadopiosenkipoklik);
+    if(ktoreodt==0)
+    {
+    g=new Graj(this);
+    }
+
+    g->Graj2(sciezkadopiosenkipoklik,wybrany);
+      ktoreodt++;
+
+
 
 }
 

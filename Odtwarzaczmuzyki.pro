@@ -17,7 +17,6 @@ SOURCES += main.cpp \
     oknoglowne.cpp \
     oknododajp.cpp \
     bazapiosenek.cpp \
-    grajpiosenke.cpp \
     playlisty.cpp \
     globalne.cpp \
     graj.cpp

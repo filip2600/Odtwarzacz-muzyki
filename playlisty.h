@@ -68,9 +68,12 @@ private:
 
    QMessageBox*box;
 
+   int fieldNo;
+
    //odtwarzanie
 
-
+  QString*sciezkiodt;
+  QString*nazwyodt;
 
    //edycja
 

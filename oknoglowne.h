@@ -2,6 +2,7 @@
 #define OKNOGLOWNE_H
 #include "playlisty.h"
 #include "globalne.h"
+#include "graj.h"
 #include <QWidget>
 #include <QFrame>
 #include <QPushButton>
@@ -10,8 +11,6 @@
 #include <QListview>
 #include <QStringListModel>
 #include <QAbstractItemView>
-#include <QtMultimedia/QSound>
-#include <QMediaPlayer>
 #include <QLabel>
 #include <QPixmap>
 #include <QIcon>
@@ -34,11 +33,6 @@ public slots:
     stworzwyszukiwarkes();
     przeszukajbazes(QString x);
     tabelakilks(QModelIndex in);
-    grajpiosenkes(QString sciezka);
-    stworzramkes(QString wybrany);
-    edytujramkes();
-    zmienionapozycjas(qint64 position);
-    zmienionyczass(qint64 position);
     tworzplayliste();
 
 
@@ -68,16 +62,9 @@ private:
     int licznik=0;
     //grajpiosenke.cpp
     QMediaPlayer*player;
-    int czygrane=0;
-    int zeropjedeno;
-    int ktoryutwor=0;
-    int f=0;
-    QFrame*ramka;
-    QPixmap odtworz;
-    QPixmap pauza;
-    QPushButton*klikodtworzpauza;
-    QString obecnasciezka;
-    QSlider*slider;
+    int ktoreodt=0;
+    Graj*g;
+
 
 
 

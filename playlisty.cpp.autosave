@@ -271,28 +271,14 @@ Playlisty::odtworzs(QString kliknietaplaylista)
    qDebug()<<qry2.value(1).toString();
    sciezkiodt[i]=qry2.value(0).toString();
     nazwyodt[i]=qry2.value(1).toString();
+    //tu zaczac grac z klasy graj
 }
   }
+  
+  
    //Przez qry wydobyc sciezke i nazwe 1 a pozniej pokolei nastepnych w petli
 
 
-   qDebug()<<ilerowmaobecna;
-
-   QSqlQuery qry1;
-   QString sciezka;
-   QString nazwa;
-   for(int i=1;i<=ilerowmaobecna;i++)
-   {
-//   qry1.exec(QString("SELECT Sciezka,Nazwa from %0 WHERE rowid=%0").arg(kliknietaplaylista,i));
-//    //kiedy sie skonczy zacznij nastepna
-//   while(qry1.next())
-//   {
-//   sciezka=qry1.value(0).toString();
-//   nazwa=qry1.value(1).toString();
-//   qDebug()<<nazwa;
-//   qDebug()<<sciezka;
-//   }
-   }
 
 
 
