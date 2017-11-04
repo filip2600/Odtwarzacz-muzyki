@@ -1,0 +1,16 @@
+#ifndef GRAJ_H
+#define GRAJ_H
+
+#include <QFrame>
+
+
+class Graj:public QFrame
+{
+    Q_OBJECT
+public:
+    Graj();
+    QString obecnasciezka;
+    
+};
+
+#endif // GRAJ_H

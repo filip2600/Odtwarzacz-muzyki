@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/Tło">
+        <file>Tło/tło.jpg</file>
+        <file>Tło/odtworz.jpg</file>
+        <file>Tło/pauza.jpg</file>
+    </qresource>
+</RCC>
